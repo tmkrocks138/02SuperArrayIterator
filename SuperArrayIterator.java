@@ -7,5 +7,15 @@ public class SuperArrayIterator{
 	     count= whichEle;
     }
 
+    public boolean hasNext(){
+	if (count < sa.size()){
+	    return true;
+	}
+	return false;
+    }
 
+
+    public void remove(){
+	throw new UnsupportedOperationException;
+    }
 }
