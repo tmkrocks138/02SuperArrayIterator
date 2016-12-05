@@ -14,7 +14,16 @@ public class SuperArrayIterator{
 	return false;
     }
 
-
+    public String next(){
+	if (this.hasNext()){
+	    count++;
+	    return sa[count--];
+	}
+	else{
+	    throw new NoSuchElementException();
+	}
+    }   
+	
     public void remove(){
 	throw new UnsupportedOperationException;
     }
